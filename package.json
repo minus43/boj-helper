@@ -1,0 +1,51 @@
+{
+  "name": "boj-class-to-main",
+  "displayName": "BOJ Java Main Converter",
+  "description": "Automatically convert class name to Main and copy code for BOJ submissions.",
+  "version": "0.0.1",
+  "publisher": "minus43",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:bojhelper.copyCode"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bojhelper.copyCode",
+        "title": "Copy BOJ Code",
+        "icon": {
+          "light": "images/boj-light.svg",
+          "dark": "images/boj-dark.svg"
+        }
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "bojhelper.copyCode",
+          "when": "resourceExtname == .java",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "latest",
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT"
+}
