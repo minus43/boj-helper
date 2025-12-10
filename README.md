@@ -1,9 +1,4 @@
-좋아! 그럼 **README를 영어 + 한국어 2개 버전으로 같이 포함한 형태**로 깔끔하게 정리해서 만들어줄게.
-VS Code Marketplace나 GitHub에 올리기 좋은 포맷으로 구성했어.
-
----
-
-# 📘 BOJ Helper
+# 📘 BOJ Java Main Converter
 
 Automatically converts Java class name to `Main` and copies the full code to clipboard for BOJ submissions.
 
