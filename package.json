@@ -2,7 +2,7 @@
   "name": "boj-class-to-main",
   "displayName": "BOJ Java Main Converter",
   "description": "Automatically convert class name to Main and copy code for BOJ submissions.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "minus43",
   "engines": {
     "vscode": "^1.90.0"
