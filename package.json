@@ -1,7 +1,7 @@
 {
   "name": "boj-class-to-main",
-  "displayName": "BOJ Java Main Converter",
-  "description": "Automatically convert class name to Main and copy code for BOJ submissions.",
+  "displayName": "BOJ Helper",
+  "description": "Automatically convert class name to Main and copy code for BOJ submissions, and create BOJ Java files from URLs.",
   "version": "0.0.2",
   "publisher": "minus43",
   "engines": {
@@ -11,7 +11,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:bojhelper.copyCode"
+    "onCommand:bojhelper.copyCode",
+    "onCommand:bojhelper.createFile"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -20,8 +21,16 @@
         "command": "bojhelper.copyCode",
         "title": "Copy BOJ Code",
         "icon": {
-          "light": "images/boj-light.svg",
-          "dark": "images/boj-dark.svg"
+          "light": "images/copy-light.svg",
+          "dark": "images/copy-dark.svg"
+        }
+      },
+      {
+        "command": "bojhelper.createFile",
+        "title": "Create BOJ Java File",
+        "icon": {
+          "light": "images/create-light.svg",
+          "dark": "images/create-dark.svg"
         }
       }
     ],
@@ -30,6 +39,11 @@
         {
           "command": "bojhelper.copyCode",
           "when": "resourceExtname == .java",
+          "group": "navigation"
+        },
+        {
+          "command": "bojhelper.createFile",
+          "when": "true",
           "group": "navigation"
         }
       ]
@@ -47,5 +61,6 @@
     "@types/node": "latest",
     "typescript": "^5.6.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "icon": "icon.png"
 }
