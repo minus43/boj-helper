@@ -2,7 +2,7 @@
   "name": "boj-class-to-main",
   "displayName": "BOJ Helper",
   "description": "Automatically convert class name to Main and copy code for BOJ submissions, and create BOJ Java files from URLs.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "minus43",
   "engines": {
     "vscode": "^1.90.0"
