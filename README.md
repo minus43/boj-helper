@@ -1,7 +1,7 @@
 # 📘 BOJ Java Helper
 
 BOJ(백준)에서 Java로 문제를 제출할 때 필요한 반복 작업을 자동화해주는 VS Code 확장입니다.  
-[vscode 마켓플레이스 주소]([https://www.acmicpc.net/problem/1000](https://marketplace.visualstudio.com/items?itemName=minus43.boj-class-to-main))
+[vscode 마켓플레이스 주소](https://marketplace.visualstudio.com/items?itemName=minus43.boj-class-to-main)
 
 
 - `public class Main`으로 자동 변환 + 복사
